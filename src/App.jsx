@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Calculator from './pages/Calculator';
+
 
 // صفحات مؤقتة (Placeholders)
 const Home = () => <div className="p-4"><h1>مرحباً بك في تطبيق المحركات</h1><p>اختر أداة للبدء</p></div>;
@@ -21,6 +23,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/calc" element={<Calculator />} />
             <Route path="/fix" element={<Troubleshoot />} />
+            <Route path="/calc" element={<Calculator />} />
           </Routes>
         </main>
 
